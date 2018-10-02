@@ -29,7 +29,7 @@ class Choice(models.Model):
 
 class Book(models.Model):
     book_name = models.CharField(max_length=200)
-    stars = models.IntegerField(default=0)
+    stars = models.CharField(max_length=1)
     release_date = models.DateField('date released')
 
     def was_published_recently(self):
